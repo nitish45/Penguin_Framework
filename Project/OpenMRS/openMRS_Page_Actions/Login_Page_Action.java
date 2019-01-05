@@ -9,6 +9,7 @@ import common_Functions.WebTextBox;
 import openMRS_Page_Locators.Login_Page_Locator;
 
 public class Login_Page_Action {
+//
 	WebDriver driver = null;
 	Login_Page_Locator loginPL = null;
 	public Login_Page_Action(WebDriver driver){
