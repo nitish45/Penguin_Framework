@@ -11,25 +11,39 @@ public class ChgPassword_Page_Locator {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(id = "username")
-	private WebElement userName;
-	
-	public WebElement getUserID(){
-		return userName;
-	}
-	
-	@FindBy(id = "password")
+		
+	@FindBy(id = "oldPassword-field")
 	private WebElement password;
 	
-	public WebElement getPassword(){
+	public WebElement getpassword(){
 		return password;
 	}
 	
-	@FindBy(id = "loginButton")
-	private WebElement loginBtn;
+	@FindBy(id = "newPassword-field")
+	private WebElement newpassword;
 	
-	public WebElement getLoginBtn(){
-		return loginBtn;
+	public WebElement getnewpassword(){
+		return newpassword;
+	}
+	
+	@FindBy(id = "confirmPassword-field")
+	private WebElement confpassword;
+	
+	public WebElement getconfPassword(){
+		return confpassword;
+	}
+	
+	@FindBy(id = "save-button")
+	private WebElement save;
+	
+	public WebElement getsave(){
+		return save;
+	}
+	
+	@FindBy(xpath = "//i[@class='icon-remove medium']//following-sibling::p")
+	private WebElement errMsg;
+	
+	public WebElement geterrMsg(){
+		return save;
 	}
 }

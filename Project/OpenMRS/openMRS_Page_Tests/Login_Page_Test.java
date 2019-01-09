@@ -30,4 +30,5 @@ public class Login_Page_Test extends BaseClass{
         Assert.assertEquals("Home ", homePA.verifyTitle());
          
      }
+    
 }
