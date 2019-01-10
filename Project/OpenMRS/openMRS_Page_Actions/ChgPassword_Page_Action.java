@@ -54,7 +54,7 @@ public class ChgPassword_Page_Action {
 		if(WebElementCommon.webElementPresent(msgPop)){
 				message = WebPopUpMessage.checkMessage(msgPop);
 		}
-		return message;
+		return message;  // message
 	}
 	
 	public String passUpdateFailPopUpMsg(String pass, String npass, String cpass){
